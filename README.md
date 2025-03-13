@@ -1,4 +1,4 @@
-# WhatsUpDoc (docmd)
+# DownMarked
 
 A command-line tool for fetching and storing developer documentation locally using the Model Context Protocol (MCP).
 
