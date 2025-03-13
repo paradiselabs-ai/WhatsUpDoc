@@ -1,0 +1,184 @@
+[](https://surveys.savanta.com/survey/selfserve/21e3/210643?list=2)We want to hear from you![Take our 2021 Community Survey!](https://surveys.savanta.com/survey/selfserve/21e3/210643?list=2)
+
+This site is no longer updated.[Go to react.dev](https://react.dev/blog/2023/03/16/introducing-react-dev)
+
+[![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K)React](https://reactjs.org/)
+
+[Docs](https://reactjs.org/docs/getting-started.html)[Tutorial](https://reactjs.org/tutorial/tutorial.html)[Blog](https://reactjs.org/blog/)[Community](https://reactjs.org/community/support.html)
+
+[v18.2.0](https://reactjs.org/versions) [Languages](https://reactjs.org/languages)[GitHub](https://github.com/facebook/react/)
+
+# Hello World
+
+> These docs are old and won’t be updated. Go to [react.dev](https://react.dev/) for the new React docs.
+> 
+> See [Quick Start](https://react.dev/learn) for an introduction to React.
+
+The smallest React example looks like this:
+
+```
+
+```
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<h1>Hello, world!</h1>);
+```
+
+```
+
+It displays a heading saying “Hello, world!” on the page.
+
+**[Try it on CodePen](https://codepen.io/gaearon/pen/rrpgNB?editors=1010)**
+
+Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.
+
+## [](#how-to-read-this-guide)How to Read This Guide
+
+In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
+
+> Tip
+> 
+> This guide is designed for people who prefer **learning concepts step by step**. If you prefer to learn by doing, check out our [practical tutorial](https://reactjs.org/tutorial/tutorial.html). You might find this guide and the tutorial complementary to each other.
+
+This is the first chapter in a step-by-step guide about main React concepts. You can find a list of all its chapters in the navigation sidebar. If you’re reading this from a mobile device, you can access the navigation by pressing the button in the bottom right corner of your screen.
+
+Every chapter in this guide builds on the knowledge introduced in earlier chapters. **You can learn most of React by reading the “Main Concepts” guide chapters in the order they appear in the sidebar.** For example, [“Introducing JSX”](https://reactjs.org/docs/introducing-jsx.html) is the next chapter after this one.
+
+## [](#knowledge-level-assumptions)Knowledge Level Assumptions
+
+React is a JavaScript library, and so we’ll assume you have a basic understanding of the JavaScript language. **If you don’t feel very confident, we recommend [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to check your knowledge level** and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won’t have to feel like you’re learning both React and JavaScript at the same time.
+
+> Note
+> 
+> This guide occasionally uses some newer JavaScript syntax in the examples. If you haven’t worked with JavaScript in the last few years, [these three points](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) should get you most of the way.
+
+## [](#lets-get-started)Let’s Get Started!
+
+Keep scrolling down, and you’ll find the link to the [next chapter of this guide](https://reactjs.org/docs/introducing-jsx.html) right before the website footer.
+
+Is this page useful?[Edit this page](https://github.com/reactjs/reactjs.org/tree/main/content/docs/hello-world.md)
+
+Installation
+
+-   [Getting Started](https://reactjs.org/docs/getting-started.html)
+-   [Add React to a Website](https://reactjs.org/docs/add-react-to-a-website.html)
+-   [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)
+-   [CDN Links](https://reactjs.org/docs/cdn-links.html)
+-   [Release Channels](https://reactjs.org/docs/release-channels.html)
+
+Main Concepts
+
+-   [1\. Hello World](https://reactjs.org/docs/hello-world.html)
+-   [2\. Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+-   [3\. Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
+-   [4\. Components and Props](https://reactjs.org/docs/components-and-props.html)
+-   [5\. State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+-   [6\. Handling Events](https://reactjs.org/docs/handling-events.html)
+-   [7\. Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
+-   [8\. Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+-   [9\. Forms](https://reactjs.org/docs/forms.html)
+-   [10\. Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
+-   [11\. Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
+-   [12\. Thinking In React](https://reactjs.org/docs/thinking-in-react.html)
+
+Advanced Guides
+
+-   [Accessibility](https://reactjs.org/docs/accessibility.html)
+-   [Code-Splitting](https://reactjs.org/docs/code-splitting.html)
+-   [Context](https://reactjs.org/docs/context.html)
+-   [Error Boundaries](https://reactjs.org/docs/error-boundaries.html)
+-   [Forwarding Refs](https://reactjs.org/docs/forwarding-refs.html)
+-   [Fragments](https://reactjs.org/docs/fragments.html)
+-   [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
+-   [Integrating with Other Libraries](https://reactjs.org/docs/integrating-with-other-libraries.html)
+-   [JSX In Depth](https://reactjs.org/docs/jsx-in-depth.html)
+-   [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
+-   [Portals](https://reactjs.org/docs/portals.html)
+-   [Profiler](https://reactjs.org/docs/profiler.html)
+-   [React Without ES6](https://reactjs.org/docs/react-without-es6.html)
+-   [React Without JSX](https://reactjs.org/docs/react-without-jsx.html)
+-   [Reconciliation](https://reactjs.org/docs/reconciliation.html)
+-   [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
+-   [Render Props](https://reactjs.org/docs/render-props.html)
+-   [Static Type Checking](https://reactjs.org/docs/static-type-checking.html)
+-   [Strict Mode](https://reactjs.org/docs/strict-mode.html)
+-   [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+-   [Uncontrolled Components](https://reactjs.org/docs/uncontrolled-components.html)
+-   [Web Components](https://reactjs.org/docs/web-components.html)
+
+API Reference
+
+-   [React](https://reactjs.org/docs/react-api.html)
+    -   [React.Component](https://reactjs.org/docs/react-component.html)
+-   [ReactDOM](https://reactjs.org/docs/react-dom.html)
+-   [ReactDOMClient](https://reactjs.org/docs/react-dom-client.html)
+-   [ReactDOMServer](https://reactjs.org/docs/react-dom-server.html)
+-   [DOM Elements](https://reactjs.org/docs/dom-elements.html)
+-   [SyntheticEvent](https://reactjs.org/docs/events.html)
+-   [Test Utilities](https://reactjs.org/docs/test-utils.html)
+-   [Test Renderer](https://reactjs.org/docs/test-renderer.html)
+-   [JS Environment Requirements](https://reactjs.org/docs/javascript-environment-requirements.html)
+-   [Glossary](https://reactjs.org/docs/glossary.html)
+
+Hooks
+
+-   [1\. Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
+-   [2\. Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
+-   [3\. Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+-   [4\. Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
+-   [5\. Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
+-   [6\. Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html)
+-   [7\. Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)
+-   [8\. Hooks FAQ](https://reactjs.org/docs/hooks-faq.html)
+
+Testing
+
+-   [Testing Overview](https://reactjs.org/docs/testing.html)
+-   [Testing Recipes](https://reactjs.org/docs/testing-recipes.html)
+-   [Testing Environments](https://reactjs.org/docs/testing-environments.html)
+
+Contributing
+
+-   [How to Contribute](https://reactjs.org/docs/how-to-contribute.html)
+-   [Codebase Overview](https://reactjs.org/docs/codebase-overview.html)
+-   [Implementation Notes](https://reactjs.org/docs/implementation-notes.html)
+-   [Design Principles](https://reactjs.org/docs/design-principles.html)
+
+FAQ
+
+-   [AJAX and APIs](https://reactjs.org/docs/faq-ajax.html)
+-   [Babel, JSX, and Build Steps](https://reactjs.org/docs/faq-build.html)
+-   [Passing Functions to Components](https://reactjs.org/docs/faq-functions.html)
+-   [Component State](https://reactjs.org/docs/faq-state.html)
+-   [Styling and CSS](https://reactjs.org/docs/faq-styling.html)
+-   [File Structure](https://reactjs.org/docs/faq-structure.html)
+-   [Versioning Policy](https://reactjs.org/docs/faq-versioning.html)
+-   [Virtual DOM and Internals](https://reactjs.org/docs/faq-internals.html)
+
+-   Previous article
+    
+    [Release Channels](https://reactjs.org/docs/release-channels.html)
+    
+-   Next article
+    
+    [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+    
+
+Docs
+
+[Installation](https://reactjs.org/docs/getting-started.html)[Main Concepts](https://reactjs.org/docs/hello-world.html)[Advanced Guides](https://reactjs.org/docs/accessibility.html)[API Reference](https://reactjs.org/docs/react-api.html)[Hooks](https://reactjs.org/docs/hooks-intro.html)[Testing](https://reactjs.org/docs/testing.html)[Contributing](https://reactjs.org/docs/how-to-contribute.html)[FAQ](https://reactjs.org/docs/faq-ajax.html)
+
+Channels
+
+[GitHub](https://github.com/facebook/react)[Stack Overflow](https://stackoverflow.com/questions/tagged/reactjs)[Discussion Forums](https://reactjs.org/community/support.html#popular-discussion-forums)[Reactiflux Chat](https://discord.gg/reactiflux)[DEV Community](https://dev.to/t/react)[Facebook](https://www.facebook.com/react)[Twitter](https://twitter.com/reactjs)
+
+Community
+
+[Code of Conduct](https://github.com/facebook/react/blob/main/CODE_OF_CONDUCT.md)[Community Resources](https://reactjs.org/community/support.html)
+
+More
+
+[Tutorial](https://reactjs.org/tutorial/tutorial.html)[Blog](https://reactjs.org/blog)[Acknowledgements](https://reactjs.org/acknowledgements.html)[React Native](https://reactnative.dev/)[Privacy](https://opensource.facebook.com/legal/privacy)[Terms](https://opensource.facebook.com/legal/terms)
+
+[![Facebook Open Source](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAABaCAMAAADQMV5DAAAC3FBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+GTFYVAAAA9HRSTlMAG7O/KQR48v/+hA5W2+piObG8RBSU/fehIG7stSWl9nkIStbYU0XN4FUvrHoDcOi3OAuLmheOmRVm4rtBNbDucsnfXlDUJpuGB3vtM3+mHBKMEF3FSDzmaMLpWN7PRh2XkAaAo3X4riuiBctS3WAxtvFx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)](https://opensource.facebook.com/projects/)
+
+Copyright © 2025 Meta Platforms, Inc.

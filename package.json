@@ -1,0 +1,57 @@
+{
+  "name": "docmd",
+  "version": "0.1.0",
+  "description": "WhatsUpDoc: CLI tool for fetching and storing developer documentation locally using MCP protocol",
+  "type": "module",
+  "bin": {
+    "docmd": "./build/cli.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/cli.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "axios": "^1.7.9",
+    "cheerio": "1.0.0-rc.12",
+    "commander": "^11.0.0",
+    "turndown": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/cheerio": "0.22.31",
+    "@types/node": "^20.11.24",
+    "@types/turndown": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "documentation",
+    "cli",
+    "markdown",
+    "docs",
+    "mcp",
+    "model-context-protocol",
+    "developer-tools",
+    "whatsupdoc",
+    "developers",
+    "doc-files",
+    "doc-pages"
+  ],
+  "author": "Dead-Developers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dead-Developers/whatsupdoc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dead-Developers/whatsupdoc/issues"
+  },
+  "homepage": "https://github.com/Dead-Developers/whatsupdoc#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
