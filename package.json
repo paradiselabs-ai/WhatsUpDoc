@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "0.6.0",
-    "axios": "^1.7.9",
+    "axios": "^1.8.2",
     "cheerio": "1.0.0-rc.12",
     "commander": "^11.0.0",
     "turndown": "^7.2.0"
