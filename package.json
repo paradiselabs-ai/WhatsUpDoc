@@ -1,10 +1,10 @@
 {
-  "name": "docmd",
+  "name": "downmarked",
   "version": "0.1.0",
   "description": "WhatsUpDoc: CLI tool for fetching and storing developer documentation locally using MCP protocol",
   "type": "module",
   "bin": {
-    "docmd": "./build/cli.js"
+    "downmarked": "build/cli.js"
   },
   "files": [
     "build"
@@ -39,19 +39,23 @@
     "whatsupdoc",
     "developers",
     "doc-files",
-    "doc-pages"
+    "doc-pages",
+    "downmarked"
   ],
-  "author": "Dead-Developers",
+  "author": "DeadDeveloper",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dead-Developers/whatsupdoc.git"
+    "url": "git+https://github.com/paradiselabs-ai/WhatsUpDoc.git"
   },
   "bugs": {
-    "url": "https://github.com/Dead-Developers/whatsupdoc/issues"
+    "url": "https://github.com/paradiselabs-ai/WhatsUpDoc/issues"
   },
-  "homepage": "https://github.com/Dead-Developers/whatsupdoc#readme",
+  "homepage": "https://github.com/paradiselabs-ai/WhatsUpDoc#readme",
   "engines": {
     "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

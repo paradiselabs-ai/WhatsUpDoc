@@ -1,8 +1,8 @@
-# WhatsUpDoc (docmd)
+# WhatsUpDoc (downmarked)
 
 A command-line tool for fetching and storing developer documentation locally using the Model Context Protocol (MCP).
 
-[![npm version](https://img.shields.io/npm/v/docmd.svg)](https://www.npmjs.com/package/docmd)
+[![npm version](https://img.shields.io/npm/v/downmarked.svg)](https://www.npmjs.com/package/downmarked)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -18,10 +18,10 @@ A command-line tool for fetching and storing developer documentation locally usi
 
 ```bash
 # Install globally
-npm install -g docmd
+npm install -g downmarked
 
 # Or use with npx
-npx docmd fetch https://reactjs.org/docs/getting-started.html
+npx downmarked fetch https://reactjs.org/docs/getting-started.html
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ npx docmd fetch https://reactjs.org/docs/getting-started.html
 ### Basic Usage
 
 ```bash
-docmd fetch <url>
+downmarked fetch <url>
 ```
 
 This will prompt you for an output location and save the documentation as Markdown.
@@ -38,7 +38,7 @@ This will prompt you for an output location and save the documentation as Markdo
 
 ```bash
 # Fetch documentation with specific options
-docmd fetch https://reactjs.org/docs/getting-started.html \
+downmarked fetch https://reactjs.org/docs/getting-started.html \
   -o ~/Documents/react-docs.md \
   -s "main" \
   -r \
@@ -62,25 +62,25 @@ docmd fetch https://reactjs.org/docs/getting-started.html \
 
 ```bash
 # Save React documentation to a specific location
-docmd fetch https://reactjs.org/docs/getting-started.html -o ~/Documents/react-docs.md
+downmarked fetch https://reactjs.org/docs/getting-started.html -o ~/Documents/react-docs.md
 
 # Target only the main content area
-docmd fetch https://reactjs.org/docs/getting-started.html -s "main"
+downmarked fetch https://reactjs.org/docs/getting-started.html -s "main"
 
 # Recursively fetch linked pages up to 2 levels deep
-docmd fetch https://reactjs.org/docs/getting-started.html -r -d 2
+downmarked fetch https://reactjs.org/docs/getting-started.html -r -d 2
 ```
 
 ### Fetch Python Documentation
 
 ```bash
 # Save Python documentation
-docmd fetch https://docs.python.org/3/tutorial/index.html -o python-tutorial.md
+downmarked fetch https://docs.python.org/3/tutorial/index.html -o python-tutorial.md
 ```
 
 ## How It Works
 
-WhatsUpDoc (docmd) uses the Model Context Protocol (MCP) to standardize communication between the CLI and the documentation server. The tool:
+WhatsUpDoc (downmarked) uses the Model Context Protocol (MCP) to standardize communication between the CLI and the documentation server. The tool:
 
 1. Fetches HTML content from the specified URL
 2. Parses the HTML using Cheerio
