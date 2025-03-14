@@ -1,5 +1,5 @@
 {
-  "name": "downmarked",
+  "name": "@paradiselabs-ai/whatsupdoc",
   "version": "0.1.0",
   "description": "WhatsUpDoc: CLI tool for fetching and storing developer documentation locally using MCP protocol",
   "type": "module",
@@ -57,6 +57,6 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com"
   }
 }
