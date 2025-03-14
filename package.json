@@ -1,6 +1,6 @@
 {
-  "name": "downmarked",
-  "version": "0.1.1",
+  "name": "@paradiselabs-ai/whatsupdoc",
+  "version": "0.1.2",
   "description": "WhatsUpDoc: CLI tool for fetching and storing developer documentation locally using MCP protocol",
   "type": "module",
   "bin": {
@@ -42,7 +42,7 @@
     "doc-pages",
     "downmarked"
   ],
-  "author": "DeadDeveloper",
+  "author": "paradiselabs-ai",
   "license": "MIT",
   "repository": {
     "type": "git",
