@@ -1,6 +1,6 @@
 {
   "name": "downmarked",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "WhatsUpDoc: CLI tool for fetching and storing developer documentation locally using MCP protocol",
   "type": "module",
   "bin": {
