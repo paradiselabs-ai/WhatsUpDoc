@@ -62,41 +62,45 @@ program
   .description('Fetch documentation from a URL')
   .argument('<url>', 'URL of the documentation page')
   .option('-s, --selector <selector>', 'CSS selector to target specific content')
+  .option('-o, --output <path>', 'Output path (absolute or relative)')
   .option('-r, --recursive', 'Recursively fetch linked documentation pages', false)
   .option('-d, --max-depth <number>', 'Maximum depth for recursive fetching', '3')
   .option('--split', 'Split documentation by headers into separate files', false)
   .action(async (url: string, options: Options) => {
-    const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-
-    const hostDir = extractSiteName(url);
-    const suggestedDir = path.join(process.cwd(), hostDir);
-
-    await new Promise<void>((resolve) => {
-      rl.question(`Enter output directory (default: ${suggestedDir}): `, (answer) => {
-        const userDir = answer.trim() || suggestedDir;
-        options.output = userDir;
-        resolve();
-      });
+    // Create readline interface for user input
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
     });
-    rl.close();
 
-    let outputDir = options.output || suggestedDir;
-    if (!path.isAbsolute(outputDir)) {
-      outputDir = path.resolve(process.cwd(), outputDir);
+    // If output path is not provided, prompt the user
+    if (!options.output) {
+      const defaultPath = path.join(process.cwd(), getDefaultOutputName(url));
+      await new Promise<void>((resolve) => {
+        rl.question(`Enter output path (default: ${defaultPath}): `, (answer) => {
+          options.output = answer.trim() || defaultPath;
+          resolve();
+        });
+      });
     }
 
-    try {
-      const stats = fs.statSync(outputDir);
-      if (!stats.isDirectory()) {
-        outputDir = path.dirname(outputDir);
-      }
-    } catch {
+    rl.close();
+
+    // Resolve relative paths to absolute paths
+    let outputPath = options.output || '';
+    if (!path.isAbsolute(outputPath)) {
+      outputPath = path.resolve(process.cwd(), outputPath);
+    }
+
+    // Ensure the directory exists
+    const outputDir = path.dirname(outputPath);
+    if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
 
     const serverPath = path.join(__dirname, 'index.js');
     const child = spawn('node', [serverPath], {
-      stdio: ['pipe', 'pipe', 'inherit'],
+      stdio: ['pipe', 'pipe', 'inherit']
     });
 
     const request = {
@@ -107,13 +111,13 @@ program
         arguments: {
           url,
           selector: options.selector || undefined,
-          outputPath: outputDir,
+          outputPath: outputPath,
           recursive: options.recursive || false,
           maxDepth: options.maxDepth ? parseInt(options.maxDepth) : undefined,
-          splitByHeaders: options.split || false,
-        },
+          splitByHeaders: options.split || false
+        }
       },
-      id: 1,
+      id: 1
     };
 
     child.stdin.write(JSON.stringify(request) + '\n');
@@ -132,19 +136,32 @@ program
             } else if (response.error) {
               console.error('Error:', response.error.message);
             }
-          } catch {}
+          } catch (e) {
+            // Ignore invalid JSON
+          }
         }
       }
     });
-    child.on('close', () => process.exit(0));
+
+    child.on('close', () => {
+      process.exit(0);
+    });
   });
 
-function extractSiteName(url: string): string {
+// Helper function to generate a default output name from URL
+function getDefaultOutputName(url: string): string {
   try {
-    const { hostname } = new URL(url);
-    return hostname.replace(/[^a-zA-Z0-9-_]/g, '_');
-  } catch {
-    return 'docs';
+    const urlObj = new URL(url);
+    const hostname = urlObj.hostname;
+    const pathSegments = urlObj.pathname.split('/').filter(Boolean);
+    const lastSegment = pathSegments.pop() || '';
+    
+    // Remove file extension if present
+    const baseName = lastSegment.replace(/\.[^/.]+$/, '');
+    
+    return `${hostname}-${baseName || 'docs'}.md`;
+  } catch (e) {
+    return 'documentation.md';
   }
 }
 
